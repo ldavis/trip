@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belize Itinerary Options - Gallery + Itineraries</title>
+  <style>
+    :root {
+      --teal:#00796b;
+      --ink:#333;
+      --muted:#666;
+      --bg:#f4f4f4;
+      --card:#ffffff;
+      --soft:#fafafa;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; background:var(--bg); color:var(--ink); }
+    header { background:var(--teal); color:#fff; padding:1.25rem 1rem; text-align:center; }
+    header h1 { margin:.1rem 0 .25rem; font-size:1.5rem; }
+    header p { margin:0; opacity:.9; }
+    main { max-width:1100px; margin: 0 auto; padding: 1.25rem; }
+    section { margin: 1.25rem 0 2rem; background:var(--card); border-radius:14px; box-shadow:0 8px 24px rgba(0,0,0,.06); overflow:hidden; border:1px solid #eaeaea; }
+    .head { padding:1rem 1.25rem; border-bottom:1px solid #eee; display:flex; align-items:center; gap:.6rem; justify-content:space-between; flex-wrap:wrap; }
+    .head h2 { margin:0; font-size:1.15rem; display:flex; align-items:center; gap:.5rem; }
+    .tag { font-size:.8rem; color:#fff; background:linear-gradient(90deg, #0bb, #079); padding:.25rem .5rem; border-radius:999px; }
+    .gallery { padding:1rem 1.25rem; display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:1rem; }
+    .card { border-radius:12px; overflow:hidden; background:var(--soft); border:1px solid #eee; display:flex; flex-direction:column; }
+    .card img { width:100%; height:190px; object-fit:cover; display:block; transition: transform .25s ease; }
+    .card:hover img { transform: scale(1.03); }
+    .caption { margin:0; padding:.65rem .8rem; font-size:.92rem; background:#fff; border-top:1px solid #eee; }
+    .itinerary { padding: .25rem 1.25rem 1rem; border-top:1px dashed #e5e5e5; background: #fff; }
+    .itinerary h3 { margin:.75rem 0 .25rem; font-size:1rem; color:var(--teal); }
+    details { border:1px solid #eaeaea; border-radius:10px; background:#fff; margin:.5rem 0; }
+    summary { cursor:pointer; list-style:none; padding:.7rem .9rem; font-weight:600; }
+    summary::-webkit-details-marker { display:none; }
+    details[open] summary { border-bottom:1px solid #eee; }
+    .day { padding:.75rem .9rem 1rem; color:#222; }
+    .meta { color:var(--muted); font-size:.9rem; margin:.25rem 0 .5rem; }
+    .bul { margin:.35rem 0; padding-left:1rem; }
+    .bul li { margin:.25rem 0; }
+    footer { text-align:center; color:var(--muted); font-size:.9rem; padding: 0 1rem 2rem; }
+    .source-note { text-align:center; font-size:.8rem; color:var(--muted); padding-bottom:.75rem; }
+    .controls { display:flex; gap:.5rem; align-items:center; }
+    .btn { border:1px solid #dcdcdc; padding:.45rem .7rem; border-radius:9px; background:#fff; cursor:pointer; font-size:.9rem; }
+    .btn:hover { background:#f7f7f7; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Belize Trip — Visual Gallery + 7‑Day Itineraries</h1>
+  <p>Skim photos, then expand each day for details. Mix of beach time + jungles + Maya sites.</p>
+</header>
+<main>
+
+  <!-- 1) Classic Cayo + Ambergris Caye -->
+  <section id="opt1">
+    <div class="head">
+      <h2>1) Classic Cayo + Ambergris Caye <span class="tag">Balanced: Jungle ➜ Reef</span></h2>
+      <div class="controls">
+        <button class="btn" onclick="toggleAll('opt1',true)">Open all days</button>
+        <button class="btn" onclick="toggleAll('opt1',false)">Close all</button>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.VAldoZFgvskWCv0L3Or0OAHaFL?pid=Api" alt="Cave Tubing Belize"><p class="caption">Cave Tubing in the Jungle</p></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.u_oxsorB2wgI7C9VDEeHWwHaE-?pid=Api" alt="Xunantunich Maya"><p class="caption">Xunantunich (hand-cranked ferry crossing)</p></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.Sg0xwWAlmVDAp1wH7qPDpgHaE8?pid=Api" alt="Hol Chan"><p class="caption">Hol Chan Marine Reserve</p></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.O0v52mTL3fzZapw5mjJQEAHaEH?pid=Api" alt="Shark Ray Alley"><p class="caption">Shark Ray Alley — rays & nurse sharks</p></div>
+    </div>
+    <div class="itinerary">
+      <h3>7‑Day Plan</h3>
+
+      <details open><summary>Day 1 — Arrive Belize City ➜ San Ignacio (2h)</summary>
+        <div class="day">
+          <div class="meta">Stay: Jungle lodge near San Ignacio</div>
+          <ul class="bul">
+            <li>Private shuttle or rental car to Cayo District.</li>
+            <li>Evening jungle walk; dinner in town or at lodge.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details><summary>Day 2 — Maya Ruins & Market</summary>
+        <div class="day">
+          <ul class="bul">
+            <li>Morning: <strong>Xunantunich</strong> (views over Guatemala border hills).</li>
+            <li>Afternoon: <strong>Cahal Pech</strong> + San Ignacio market & cafes.</li>
+            <li>Optional: Mestizo or Mayan cooking class.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details><summary>Day 3 — Choice: ATM Cave or Cave Tubing</summary>
+        <div class="day">
+          <ul class="bul">
+            <li><strong>ATM Cave</strong> (strenuous, world‑class archaeology) — or —</li>
+            <li><strong>Nohoch Che’en</strong> cave tubing + zipline (family‑friendly).</li>
+          </ul>
+        </div>
+      </details>
+
+      <details><summary>Day 4 — Transit to Ambergris Caye</summary>
+        <div class="day">
+          <ul class="bul">
+            <li>Drive/shuttle to Belize City ➜ 15‑min flight or ferry to San Pedro.</li>
+            <li>Beach check‑in; sunset on the pier.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details><summary>Day 5 — Hol Chan & Shark Ray Alley</summary>
+        <div class="day">
+          <ul class="bul">
+            <li>Half‑ or full‑day snorkel: coral gardens, turtles, rays, nurse sharks.</li>
+            <li>Evening sail or beachfront dinner.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details><summary>Day 6 — Free Day / Optional Blue Hole (Divers)</summary>
+        <div class="day">
+          <ul class="bul">
+            <li>Relax: SUP, kayak, beach clubs; or golf‑cart explore the island.</li>
+            <li>Divers: Full‑day trip to <strong>Great Blue Hole</strong> & Lighthouse Reef.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details><summary>Day 7 — Easy Morning ➜ Depart</summary>
+        <div class="day">
+          <ul class="bul"><li>Short hop back to BZE for your flight home.</li></ul>
+        </div>
+      </details>
+      <div class="source-note">Photos are Bing thumbnails pointing to real attractions.</div>
+    </div>
+  </section>
+
+  <!-- 2) San Ignacio + Caye Caulker -->
+  <section id="opt2">
+    <div class="head">
+      <h2>2) San Ignacio Cultural + Caye Caulker Chill <span class="tag">Culture + Slow Island</span></h2>
+      <div class="controls">
+        <button class="btn" onclick="toggleAll('opt2',true)">Open all days</button>
+        <button class="btn" onclick="toggleAll('opt2',false)">Close all</button>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.nQRpcUtvQwPPeIJ5qvDzAQHaE7?pid=Api" alt="Caracol"><p class="caption">Caracol Archaeological Site</p></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.ebvKciUloOKJf0DNRC8uBQHaFc?pid=Api" alt="Maya Temple"><p class="caption">Grand Maya temple in jungle</p></div>
+      <div class="card"><img src="https://tse1.mm.bing.net/th/id/OIP.6I5hFAWudFT6RJx7oMGoJQHaE7?pid=Api" alt="Caye Caulker"><p class="caption">Caye Caulker lagoon & The Split</p></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.XI4Plkj_UaReI3tdBqgEBAHaFj?pid=Api" alt="Snorkel"><p class="caption">Reef snorkeling & turtles</p></div>
+    </div>
+    <div class="itinerary">
+      <h3>7‑Day Plan</h3>
+      <details open><summary>Day 1 — Arrive ➜ San Ignacio</summary>
+        <div class="day"><div class="meta">Stay: Eco‑lodge in Cayo</div>
+        <ul class="bul"><li>Transfer ~2h, dinner in town, early night.</li></ul></div>
+      </details>
+      <details><summary>Day 2 — Xunantunich + Cahal Pech</summary>
+        <div class="day"><ul class="bul"><li>Two classic ruin sites with different scales & eras.</li><li>Chocolate workshop or market after.</li></ul></div>
+      </details>
+      <details><summary>Day 3 — Mountain Pine Ridge or Barton Creek</summary>
+        <div class="day"><ul class="bul"><li>Rio On Pools + Big Rock Falls swim spots; or</li><li>Canoe into <strong>Barton Creek Cave</strong>.</li></ul></div>
+      </details>
+      <details><summary>Day 4 — Water Taxi to Caye Caulker</summary>
+        <div class="day"><ul class="bul"><li>Belize City ➜ 45‑min boat; sunset at The Split.</li></ul></div>
+      </details>
+      <details><summary>Day 5 — Hol Chan Snorkel Circuit</summary>
+        <div class="day"><ul class="bul"><li>Hol Chan, Shark Ray Alley, Coral Gardens.</li></ul></div>
+      </details>
+      <details><summary>Day 6 — Slow Day: Bikes, Kayaks, Manatees</summary>
+        <div class="day"><ul class="bul"><li>Ride north & south ends; optional manatee tour (seasonal).</li></ul></div>
+      </details>
+      <details><summary>Day 7 — Depart</summary>
+        <div class="day"><ul class="bul"><li>Boat back to Belize City ➜ airport.</li></ul></div>
+      </details>
+      <div class="source-note">Photos are Bing thumbnails pointing to real attractions.</div>
+    </div>
+  </section>
+
+  <!-- 3) Southern Escape -->
+  <section id="opt3">
+    <div class="head">
+      <h2>3) Southern Escape — Placencia & Forest Trails <span class="tag">Off‑beat Coast</span></h2>
+      <div class="controls">
+        <button class="btn" onclick="toggleAll('opt3',true)">Open all days</button>
+        <button class="btn" onclick="toggleAll('opt3',false)">Close all</button>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.yV8ZO4nM3CP0dVLHEknudAHaE7?pid=Api" alt="Caracol View"><p class="caption">Jungle views from the ruins</p></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.VAldoZFgvskWCv0L3Or0OAHaFL?pid=Api" alt="Caves"><p class="caption">Cave tubing & zipline options</p></div>
+      <div class="card"><img src="https://tse1.mm.bing.net/th/id/OIP.6I5hFAWudFT6RJx7oMGoJQHaE7?pid=Api" alt="Placencia Beach"><p class="caption">Placencia beach days</p></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.nQRpcUtvQwPPeIJ5qvDzAQHaE7?pid=Api" alt="Forest Pools"><p class="caption">Waterfall pools in Pine Ridge</p></div>
+    </div>
+    <div class="itinerary">
+      <h3>7‑Day Plan</h3>
+      <details open><summary>Day 1 — Arrive ➜ San Ignacio</summary>
+        <div class="day"><div class="meta">Stay: Jungle lodge</div>
+        <ul class="bul"><li>Transfer ~2h, settle in.</li></ul></div>
+      </details>
+      <details><summary>Day 2 — Caracol + Rio Frio Cave</summary>
+        <div class="day"><ul class="bul"><li>Full‑day guided ruins + cave photo stop.</li></ul></div>
+      </details>
+      <details><summary>Day 3 — Pine Ridge Waterfalls</summary>
+        <div class="day"><ul class="bul"><li>Rio On Pools, Big Rock Falls swimming.</li></ul></div>
+      </details>
+      <details><summary>Day 4 — Transit to Placencia (5h drive or shuttle)</summary>
+        <div class="day"><ul class="bul"><li>Check‑in beachside; dinner on the sidewalk.</li></ul></div>
+      </details>
+      <details><summary>Day 5 — Laughing Bird Caye Snorkel</summary>
+        <div class="day"><ul class="bul"><li>UNESCO cayes, reefs, turtles; picnic lunch.</li></ul></div>
+      </details>
+      <details><summary>Day 6 — Garifuna Culture + Beach Time</summary>
+        <div class="day"><ul class="bul"><li>Hopkins/Dangriga for drumming or cooking class.</li><li>Kayak the lagoon at golden hour.</li></ul></div>
+      </details>
+      <details><summary>Day 7 — Depart</summary>
+        <div class="day"><ul class="bul"><li>Shuttle or short domestic flight to BZE.</li></ul></div>
+      </details>
+      <div class="source-note">Photos are Bing thumbnails pointing to real attractions.</div>
+    </div>
+  </section>
+
+  <!-- 4) Private Island Retreat -->
+  <section id="opt4">
+    <div class="head">
+      <h2>4) Private Island Retreat — Thatch Caye <span class="tag">All‑Inclusive Chill</span></h2>
+      <div class="controls">
+        <button class="btn" onclick="toggleAll('opt4',true)">Open all days</button>
+        <button class="btn" onclick="toggleAll('opt4',false)">Close all</button>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.4eDEJ6SpOgFKEveREYrXgAHaFJ?pid=Api" alt="Thatch Caye"><p class="caption">Overwater bungalows & hammocks</p></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.4eDEJ6SpOgFKEveREYrXgAHaFJ?pid=Api" alt="Hammocks"><p class="caption">Palm‑fringed serenity</p></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.4eDEJ6SpOgFKEveREYrXgAHaFJ?pid=Api" alt="Kayaking"><p class="caption">Kayaks & SUP on clear water</p></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.4eDEJ6SpOgFKEveREYrXgAHaFJ?pid=Api" alt="Sunset"><p class="caption">Sunset on a private cay</p></div>
+    </div>
+    <div class="itinerary">
+      <h3>7‑Day Plan</h3>
+      <details open><summary>Day 1 — Arrive Belize City ➜ Dangriga/Hopkins ➜ Thatch Caye</summary>
+        <div class="day"><div class="meta">Stay: Thatch Caye Resort (boat transfer)</div>
+        <ul class="bul"><li>Short domestic flight + boat ride to the cay.</li></ul></div>
+      </details>
+      <details><summary>Day 2–6 — Island Life + Optional Inland Day Trip</summary>
+        <div class="day"><ul class="bul">
+          <li>Snorkel nearby reefs; SUP & kayak from your dock.</li>
+          <li>Beach naps in hammocks; stargazing at night.</li>
+          <li>Optional: one inland day trip to ruins or zipline.</li>
+        </ul></div>
+      </details>
+      <details><summary>Day 7 — Boat Back to Mainland ➜ Depart</summary>
+        <div class="day"><ul class="bul"><li>Boat ➜ short flight to BZE for your connection home.</li></ul></div>
+      </details>
+      <div class="source-note">Photos are Bing thumbnails pointing to real attractions.</div>
+    </div>
+  </section>
+
+  <footer>
+    Tip: Click “Open all days” to scan quickly. Want hotel recs, kid‑friendly tweaks, or budget vs luxury variants? Tell me your preferences and I’ll tailor this.
+  </footer>
+</main>
+
+<script>
+function toggleAll(sectionId, open) {
+  const sec = document.getElementById(sectionId);
+  if (!sec) return;
+  const nodes = sec.querySelectorAll('details');
+  nodes.forEach(d => { if (open) d.setAttribute('open',''); else d.removeAttribute('open'); });
+}
+</script>
+</body>
+</html>
